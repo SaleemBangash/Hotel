@@ -15,6 +15,7 @@ import 'package:hotel/refreshement.dart';
 import 'package:hotel/reg_page.dart';
 import 'package:hotel/ride.dart';
 import 'package:hotel/room_booking.dart';
+import 'package:hotel/status.dart';
 import 'package:hotel/utils/routes.dart';
 
 void main() {
@@ -44,6 +45,7 @@ class MyApp extends StatelessWidget {
         MyRoutes.eveningRoute: (context) => Evening(),
         MyRoutes.breakfastRoute: (context) => BreakFast(),
         MyRoutes.itemRoute: (context) => DefaultItem(),
+        MyRoutes.statusRoute: (context) => Status(),
       },
     );
   }

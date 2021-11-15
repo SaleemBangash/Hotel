@@ -36,7 +36,7 @@ class _DefaultItemState extends State<DefaultItem> {
             style: TextStyle(fontSize: 20),
           ),
           Padding(
-            padding: const EdgeInsets.all(8.0),
+            padding: const EdgeInsets.only(top: 70),
             child: Container(
               height: 30,
               width: 220,
@@ -53,31 +53,108 @@ class _DefaultItemState extends State<DefaultItem> {
           ),
           Padding(
             padding: const EdgeInsets.only(left: 100),
-            child: Container(
-              child: Row(
-                children: [
-                  Padding(
-                    padding: const EdgeInsets.only(left: 0),
-                    child: Text("first"),
-                  ),
-                  Padding(
-                    padding: const EdgeInsets.only(left: 50),
-                    child: Text("1"),
-                  ),
-                  Padding(
-                    padding: const EdgeInsets.only(left: 80),
-                    child: Checkbox(
-                      value: isChecked,
-                      onChanged: (bool? value) {
-                        setState(() {
-                          isChecked = value!;
-                        });
-                      },
+            child: Column(
+              children: [
+                Row(
+                  children: [
+                    Text("first"),
+                    Padding(
+                      padding: const EdgeInsets.only(left: 50),
+                      child: Text("1"),
                     ),
-                  ),
-                ],
-              ),
+                    Padding(
+                      padding: const EdgeInsets.only(left: 80),
+                      child: Checkbox(
+                        value: isChecked,
+                        onChanged: (bool? value) {
+                          setState(() {
+                            isChecked = value!;
+                          });
+                        },
+                      ),
+                    ),
+                  ],
+                ),
+                Row(
+                  children: [
+                    Padding(
+                      padding: const EdgeInsets.only(left: 0),
+                      child: Text("Second"),
+                    ),
+                    Padding(
+                      padding: const EdgeInsets.only(left: 30),
+                      child: Text("1"),
+                    ),
+                    Padding(
+                      padding: const EdgeInsets.only(left: 80),
+                      child: Checkbox(
+                        value: isChecked,
+                        onChanged: (bool? value) {
+                          setState(() {
+                            isChecked = value!;
+                          });
+                        },
+                      ),
+                    ),
+                  ],
+                ),
+                Row(
+                  children: [
+                    Padding(
+                      padding: const EdgeInsets.only(left: 0),
+                      child: Text("Third"),
+                    ),
+                    Padding(
+                      padding: const EdgeInsets.only(left: 45),
+                      child: Text("1"),
+                    ),
+                    Padding(
+                      padding: const EdgeInsets.only(left: 80),
+                      child: Checkbox(
+                        value: isChecked,
+                        onChanged: (bool? value) {
+                          setState(() {
+                            isChecked = value!;
+                          });
+                        },
+                      ),
+                    ),
+                  ],
+                ),
+                Row(
+                  children: [
+                    Padding(
+                      padding: const EdgeInsets.only(left: 0),
+                      child: Text("Fourth"),
+                    ),
+                    Padding(
+                      padding: const EdgeInsets.only(left: 35),
+                      child: Text("1"),
+                    ),
+                    Padding(
+                      padding: const EdgeInsets.only(left: 80),
+                      child: Checkbox(
+                        value: isChecked,
+                        onChanged: (bool? value) {
+                          setState(() {
+                            isChecked = value!;
+                          });
+                        },
+                      ),
+                    ),
+                  ],
+                ),
+              ],
             ),
+          ),
+          Padding(
+            padding: const EdgeInsets.all(30.0),
+            child: ElevatedButton(
+                onPressed: () {},
+                child: Text("Place Order"),
+                style: TextButton.styleFrom(
+                  minimumSize: Size(150, 30),
+                )),
           )
         ],
       ),

@@ -113,7 +113,7 @@ class Login_Page extends StatelessWidget with InputValidationMixin {
               ),
               InkWell(
                 onTap: () {
-                  Navigator.pushNamed(context, MyRoutes.itemRoute);
+                  Navigator.pushNamed(context, MyRoutes.statusRoute);
                 },
                 child: Container(
                   child: Center(

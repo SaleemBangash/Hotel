@@ -13,4 +13,5 @@ class MyRoutes {
   static String eveningRoute = "/evening";
   static String breakfastRoute = "/breakfast";
   static String itemRoute = "/defaultItem";
+  static String statusRoute = "/status";
 }
