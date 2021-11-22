@@ -18,7 +18,7 @@ class booking extends StatelessWidget {
             ElevatedButton(
               child: Text("Room Booking"),
               style: TextButton.styleFrom(
-                  backgroundColor: Colors.black,
+                  backgroundColor: Colors.blue,
                   shape: StadiumBorder(),
                   minimumSize: Size(150, 40)),
               onPressed: () {
@@ -29,7 +29,7 @@ class booking extends StatelessWidget {
             ElevatedButton(
               child: Text("Ride Booking"),
               style: TextButton.styleFrom(
-                  backgroundColor: Colors.black,
+                  backgroundColor: Colors.blue,
                   shape: StadiumBorder(),
                   minimumSize: Size(150, 40)),
               onPressed: () {
@@ -40,7 +40,7 @@ class booking extends StatelessWidget {
             ElevatedButton(
               child: const Text("Refreshement"),
               style: TextButton.styleFrom(
-                  backgroundColor: Colors.black,
+                  backgroundColor: Colors.blue,
                   shape: StadiumBorder(),
                   minimumSize: Size(150, 40)),
               onPressed: () {
@@ -51,7 +51,7 @@ class booking extends StatelessWidget {
             ElevatedButton(
               child: Text("Sign Out"),
               style: TextButton.styleFrom(
-                  backgroundColor: Colors.black,
+                  backgroundColor: Colors.blue,
                   shape: StadiumBorder(),
                   minimumSize: Size(150, 40)),
               onPressed: () {

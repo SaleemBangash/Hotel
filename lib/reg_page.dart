@@ -28,112 +28,138 @@ class Reg_page extends StatelessWidget {
                 Form(
                     child: Padding(
                   padding: const EdgeInsets.all(8.0),
-                  child: TextField(
-                    style: TextStyle(color: Colors.white),
-                    decoration: InputDecoration(
-                        border: OutlineInputBorder(
-                            borderRadius: BorderRadius.circular(16)),
-                        labelStyle: TextStyle(
-                            color: Colors.white,
-                            fontSize: 20,
-                            fontWeight: FontWeight.bold),
-                        hintText: "Enter First Name",
-                        hintStyle: TextStyle(color: Colors.white),
-                        labelText: "First Name"),
+                  child: Container(
+                    decoration: BoxDecoration(
+                        color: Colors.grey[600]!.withOpacity(0.5),
+                        borderRadius: BorderRadius.circular(16)),
+                    child: TextField(
+                      style: TextStyle(color: Colors.white),
+                      decoration: InputDecoration(
+                          border: OutlineInputBorder(
+                              borderRadius: BorderRadius.circular(16)),
+                          labelStyle: TextStyle(
+                              color: Colors.white,
+                              fontSize: 20,
+                              fontWeight: FontWeight.bold),
+                          hintText: "Enter First Name",
+                          hintStyle: TextStyle(color: Colors.white),
+                          labelText: "First Name"),
+                    ),
                   ),
                 )),
                 Form(
                   child: Padding(
                     padding: const EdgeInsets.all(8.0),
-                    child: TextFormField(
-                      style: TextStyle(color: Colors.white),
-                      decoration: InputDecoration(
-                          border: OutlineInputBorder(
-                              borderRadius: BorderRadius.circular(16)),
-                          labelStyle: TextStyle(
-                              color: Colors.white,
-                              fontSize: 20,
-                              fontWeight: FontWeight.bold),
-                          hintText: "Enter Last Name",
-                          hintStyle: TextStyle(color: Colors.white),
-                          labelText: "Last Name"),
-                      validator: (value) {
-                        if (value!.isEmpty) {
-                          return "User Name Cannot Be Empty";
-                        }
-                      },
+                    child: Container(
+                      decoration: BoxDecoration(
+                          color: Colors.grey[600]!.withOpacity(0.5),
+                          borderRadius: BorderRadius.circular(16)),
+                      child: TextFormField(
+                        style: TextStyle(color: Colors.white),
+                        decoration: InputDecoration(
+                            border: OutlineInputBorder(
+                                borderRadius: BorderRadius.circular(16)),
+                            labelStyle: TextStyle(
+                                color: Colors.white,
+                                fontSize: 20,
+                                fontWeight: FontWeight.bold),
+                            hintText: "Enter Last Name",
+                            hintStyle: TextStyle(color: Colors.white),
+                            labelText: "Last Name"),
+                        validator: (value) {
+                          if (value!.isEmpty) {
+                            return "User Name Cannot Be Empty";
+                          }
+                        },
+                      ),
                     ),
                   ),
                 ),
                 Form(
                   child: Padding(
                     padding: const EdgeInsets.all(8.0),
-                    child: TextFormField(
-                      style: TextStyle(color: Colors.white),
-                      decoration: InputDecoration(
-                          border: OutlineInputBorder(
-                              borderRadius: BorderRadius.circular(16)),
-                          labelStyle: TextStyle(
-                              color: Colors.white,
-                              fontSize: 20,
-                              fontWeight: FontWeight.bold),
-                          hintText: "Enter Email",
-                          hintStyle: TextStyle(color: Colors.white),
-                          labelText: "Email"),
-                      validator: (value) {
-                        if (value!.isEmpty) {
-                          return "Email Cannot Be Empty";
-                        }
-                      },
+                    child: Container(
+                      decoration: BoxDecoration(
+                          color: Colors.grey[600]!.withOpacity(0.5),
+                          borderRadius: BorderRadius.circular(16)),
+                      child: TextFormField(
+                        style: TextStyle(color: Colors.white),
+                        decoration: InputDecoration(
+                            border: OutlineInputBorder(
+                                borderRadius: BorderRadius.circular(16)),
+                            labelStyle: TextStyle(
+                                color: Colors.white,
+                                fontSize: 20,
+                                fontWeight: FontWeight.bold),
+                            hintText: "Enter Email",
+                            hintStyle: TextStyle(color: Colors.white),
+                            labelText: "Email"),
+                        validator: (value) {
+                          if (value!.isEmpty) {
+                            return "Email Cannot Be Empty";
+                          }
+                        },
+                      ),
                     ),
                   ),
                 ),
                 Form(
                   child: Padding(
                     padding: const EdgeInsets.all(8.0),
-                    child: TextFormField(
-                      style: TextStyle(color: Colors.white),
-                      keyboardType: TextInputType.visiblePassword,
-                      decoration: InputDecoration(
-                          border: OutlineInputBorder(
-                              borderRadius: BorderRadius.circular(16)),
-                          labelStyle: TextStyle(
-                              color: Colors.white,
-                              fontSize: 20,
-                              fontWeight: FontWeight.bold),
-                          hintText: "Enter Password",
-                          hintStyle: TextStyle(color: Colors.white),
-                          labelText: "Password"),
-                      validator: (value) {
-                        if (value!.isEmpty) {
-                          return "User Name Cannot Be Empty";
-                        }
-                      },
+                    child: Container(
+                      decoration: BoxDecoration(
+                          color: Colors.grey[600]!.withOpacity(0.5),
+                          borderRadius: BorderRadius.circular(16)),
+                      child: TextFormField(
+                        style: TextStyle(color: Colors.white),
+                        keyboardType: TextInputType.visiblePassword,
+                        decoration: InputDecoration(
+                            border: OutlineInputBorder(
+                                borderRadius: BorderRadius.circular(16)),
+                            labelStyle: TextStyle(
+                                color: Colors.white,
+                                fontSize: 20,
+                                fontWeight: FontWeight.bold),
+                            hintText: "Enter Password",
+                            hintStyle: TextStyle(color: Colors.white),
+                            labelText: "Password"),
+                        validator: (value) {
+                          if (value!.isEmpty) {
+                            return "User Name Cannot Be Empty";
+                          }
+                        },
+                        obscureText: true,
+                      ),
                     ),
                   ),
                 ),
                 Form(
                   child: Padding(
                     padding: const EdgeInsets.all(8.0),
-                    child: TextFormField(
-                      style: TextStyle(color: Colors.white),
-                      keyboardType: TextInputType.visiblePassword,
-                      decoration: InputDecoration(
-                          border: OutlineInputBorder(
-                              borderRadius: BorderRadius.circular(16)),
-                          labelStyle: TextStyle(
-                              color: Colors.white,
-                              fontSize: 20,
-                              fontWeight: FontWeight.bold),
-                          hintText: "Confirm Password",
-                          hintStyle: TextStyle(color: Colors.white),
-                          labelText: "Confirm Password"),
-                      validator: (value) {
-                        if (value!.isEmpty) {
-                          return "User Name Cannot Be Empty";
-                        }
-                      },
-                      obscureText: true,
+                    child: Container(
+                      decoration: BoxDecoration(
+                          color: Colors.grey[600]!.withOpacity(0.5),
+                          borderRadius: BorderRadius.circular(16)),
+                      child: TextFormField(
+                        style: TextStyle(color: Colors.white),
+                        keyboardType: TextInputType.visiblePassword,
+                        decoration: InputDecoration(
+                            border: OutlineInputBorder(
+                                borderRadius: BorderRadius.circular(16)),
+                            labelStyle: TextStyle(
+                                color: Colors.white,
+                                fontSize: 20,
+                                fontWeight: FontWeight.bold),
+                            hintText: "Confirm Password",
+                            hintStyle: TextStyle(color: Colors.white),
+                            labelText: "Confirm Password"),
+                        validator: (value) {
+                          if (value!.isEmpty) {
+                            return "User Name Cannot Be Empty";
+                          }
+                        },
+                        obscureText: true,
+                      ),
                     ),
                   ),
                 ),
@@ -149,9 +175,9 @@ class Reg_page extends StatelessWidget {
                     ),
                     style: TextButton.styleFrom(
                         shape: StadiumBorder(),
-                        side: BorderSide(width: 6),
+                        //side: BorderSide(width: 6),
                         minimumSize: Size(160, 40),
-                        backgroundColor: Colors.black),
+                        backgroundColor: Colors.blue),
                     onPressed: () {
                       Navigator.pushNamed(context, MyRoutes.loginRoute);
                     },

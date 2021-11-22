@@ -42,7 +42,7 @@ class rideBooking extends StatelessWidget {
                     shape: StadiumBorder(),
                     // side: BorderSide(width: 6, color: Colors.red),
                     minimumSize: Size(150, 40),
-                    backgroundColor: Colors.black,
+                    backgroundColor: Colors.blue,
                     textStyle: TextStyle(
                       fontWeight: FontWeight.bold,
                       fontSize: 20,
@@ -57,7 +57,7 @@ class rideBooking extends StatelessWidget {
                 style: TextButton.styleFrom(
                     shape: StadiumBorder(),
                     minimumSize: Size(150, 40),
-                    backgroundColor: Colors.black,
+                    backgroundColor: Colors.blue,
                     textStyle: TextStyle(
                       fontWeight: FontWeight.bold,
                       fontSize: 20,

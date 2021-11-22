@@ -106,9 +106,9 @@ class Login_Page extends StatelessWidget with InputValidationMixin {
                   ),
                   style: TextButton.styleFrom(
                       shape: StadiumBorder(),
-                      side: BorderSide(width: 6),
+                      //side: BorderSide(width: 6),
                       minimumSize: Size(160, 40),
-                      backgroundColor: Colors.black),
+                      backgroundColor: Colors.blue),
                   onPressed: () {
                     Navigator.pushNamed(context, MyRoutes.bookRoute);
                   },

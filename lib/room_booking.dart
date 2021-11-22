@@ -1,4 +1,4 @@
-// ignore_for_file: prefer_const_constructors
+// ignore_for_file: prefer_const_constructors, unnecessary_new
 
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/foundation.dart';
@@ -16,6 +16,10 @@ class roomBooking extends StatefulWidget {
 
 class _roomBookingState extends State<roomBooking> {
   bool isChecked = false;
+  bool onChecked = false;
+  bool ifChecked = false;
+  bool iChecked = false;
+
   @override
   Widget build(BuildContext context) {
     return Material(
@@ -45,7 +49,8 @@ class _roomBookingState extends State<roomBooking> {
               child: TextField(
                 keyboardType: TextInputType.name,
                 decoration: InputDecoration(
-                  icon: Icon(Icons.person),
+                  prefixIcon: Icon(Icons.person),
+                  //icon: Icon(Icons.person),
                   hintText: "First Name",
                   border: OutlineInputBorder(
                       borderRadius: BorderRadius.circular(16)),
@@ -59,7 +64,8 @@ class _roomBookingState extends State<roomBooking> {
             child: TextFormField(
               keyboardType: TextInputType.name,
               decoration: InputDecoration(
-                icon: Icon(Icons.person),
+                prefixIcon: Icon(Icons.person),
+                //icon: Icon(Icons.person),
                 hintText: "Last Name",
                 border:
                     OutlineInputBorder(borderRadius: BorderRadius.circular(16)),
@@ -72,7 +78,8 @@ class _roomBookingState extends State<roomBooking> {
             child: TextFormField(
               keyboardType: TextInputType.streetAddress,
               decoration: InputDecoration(
-                icon: Icon(Icons.location_on),
+                prefixIcon: Icon(Icons.location_on),
+                // icon: Icon(Icons.location_on),
                 hintText: "Address 1",
                 border:
                     OutlineInputBorder(borderRadius: BorderRadius.circular(16)),
@@ -85,7 +92,8 @@ class _roomBookingState extends State<roomBooking> {
             child: TextFormField(
               keyboardType: TextInputType.streetAddress,
               decoration: InputDecoration(
-                icon: Icon(Icons.location_on),
+                prefixIcon: Icon(Icons.location_on),
+                // icon: Icon(Icons.location_on),
                 hintText: "Address 2",
                 border:
                     OutlineInputBorder(borderRadius: BorderRadius.circular(16)),
@@ -99,7 +107,8 @@ class _roomBookingState extends State<roomBooking> {
               keyboardType: TextInputType.phone,
               decoration: InputDecoration(
                 prefixText: "+92",
-                icon: Icon(Icons.phone),
+                prefixIcon: Icon(Icons.phone),
+                // icon: Icon(Icons.phone),
                 hintText: "Phone",
                 border:
                     OutlineInputBorder(borderRadius: BorderRadius.circular(16)),
@@ -112,7 +121,8 @@ class _roomBookingState extends State<roomBooking> {
             child: TextFormField(
               keyboardType: TextInputType.emailAddress,
               decoration: InputDecoration(
-                icon: Icon(Icons.email),
+                prefixIcon: Icon(Icons.email),
+                // icon: Icon(Icons.email),
                 hintText: "Email",
                 border:
                     OutlineInputBorder(borderRadius: BorderRadius.circular(16)),
@@ -131,7 +141,8 @@ class _roomBookingState extends State<roomBooking> {
                 return null;
               },
               decoration: InputDecoration(
-                icon: Icon(Icons.location_city),
+                prefixIcon: Icon(Icons.location_city),
+                //icon: Icon(Icons.location_city),
                 hintText: "State",
                 border:
                     OutlineInputBorder(borderRadius: BorderRadius.circular(16)),
@@ -145,8 +156,8 @@ class _roomBookingState extends State<roomBooking> {
               keyboardType: TextInputType.number,
               decoration: InputDecoration(
                 //prefixText: "+91",
-                prefixIcon: Icon(Icons.phone),
-                icon: Icon(Icons.code),
+                prefixIcon: Icon(Icons.code),
+                // icon: Icon(Icons.code),
                 hintText: "Zip Code",
                 border:
                     OutlineInputBorder(borderRadius: BorderRadius.circular(16)),
@@ -163,35 +174,45 @@ class _roomBookingState extends State<roomBooking> {
               ),
             ),
           ),
-          Container(
-            margin: const EdgeInsets.only(right: 250, left: 50),
-            // width: 20,
-            child: Padding(
-              padding: const EdgeInsets.only(top: 10),
-              child: TextField(
-                  keyboardType: TextInputType.number,
-                  //maxLines: 20,
-                  decoration: InputDecoration(
-                    hintText: "child",
-                    border: OutlineInputBorder(
-                        borderRadius: BorderRadius.circular(16),
-                        borderSide: BorderSide(width: 2)),
-                  )),
+          Padding(
+            padding: const EdgeInsets.only(left: 00),
+            child: new Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: <Widget>[
+                new Flexible(
+                  child: Padding(
+                    padding: const EdgeInsets.only(left: 70),
+                    child: new TextField(
+                        decoration: InputDecoration(
+                            border: OutlineInputBorder(
+                                borderRadius: BorderRadius.circular(16)),
+                            contentPadding: EdgeInsets.all(10))),
+                  ),
+                ),
+                SizedBox(
+                  width: 20.0,
+                ),
+                new Flexible(
+                  child: Padding(
+                    padding: const EdgeInsets.only(right: 70),
+                    child: new TextField(
+                        decoration: InputDecoration(
+                            border: OutlineInputBorder(
+                                borderRadius: BorderRadius.circular(16)),
+                            contentPadding: EdgeInsets.all(10))),
+                  ),
+                ),
+                // SizedBox(
+                //   width: 20.0,
+                // ),
+                // new Flexible(
+                //   child: new TextField(
+                //       decoration:
+                //           InputDecoration(contentPadding: EdgeInsets.all(10))),
+                // ),
+              ],
             ),
           ),
-          Container(
-              margin: const EdgeInsets.only(right: 250, left: 50, top: 10),
-              // width: 20,
-              child: TextField(
-                keyboardType: TextInputType.number,
-                //maxLines: 20,
-                decoration: InputDecoration(
-                    hintText: "elder",
-                    border: OutlineInputBorder(
-                      borderRadius: BorderRadius.circular(16),
-                      // borderSide: BorderSide(width: 2)),
-                    )),
-              )),
           SizedBox(height: 20),
           Padding(
             padding: const EdgeInsets.all(8.0),
@@ -200,7 +221,6 @@ class _roomBookingState extends State<roomBooking> {
                 "Dog".toUpperCase(),
                 style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
               ),
-
             ),
           ),
           Row(
@@ -210,6 +230,7 @@ class _roomBookingState extends State<roomBooking> {
                 onChanged: (bool? value) {
                   setState(() {
                     isChecked = value!;
+                    onChecked = false;
                   });
                 },
               ),
@@ -222,10 +243,11 @@ class _roomBookingState extends State<roomBooking> {
           Row(
             children: [
               Checkbox(
-                value: isChecked,
+                value: onChecked,
                 onChanged: (bool? value) {
                   setState(() {
-                    isChecked = value!;
+                    onChecked = value!;
+                    isChecked = false;
                   });
                 },
               ),
@@ -242,8 +264,8 @@ class _roomBookingState extends State<roomBooking> {
               keyboardType: TextInputType.number,
               decoration: InputDecoration(
                 //prefixText: "+91",
-                //prefixIcon: Icon(Icons.phone),
-                icon: Icon(Icons.location_city),
+                prefixIcon: Icon(Icons.location_city),
+                // icon: Icon(Icons.location_city),
                 hintText: "Nationality",
                 border:
                     OutlineInputBorder(borderRadius: BorderRadius.circular(16)),
@@ -257,8 +279,8 @@ class _roomBookingState extends State<roomBooking> {
               keyboardType: TextInputType.number,
               decoration: InputDecoration(
                 // prefixText: "+91",
-                //prefixIcon: Icon(Icons.phone),
-                icon: Icon(Icons.drive_eta),
+                prefixIcon: Icon(Icons.drive_eta),
+                //icon: Icon(Icons.drive_eta),
                 hintText: "Drivilng Liscence",
                 border:
                     OutlineInputBorder(borderRadius: BorderRadius.circular(16)),
@@ -271,7 +293,8 @@ class _roomBookingState extends State<roomBooking> {
             child: TextFormField(
               keyboardType: TextInputType.number,
               decoration: InputDecoration(
-                icon: Icon(Icons.file_copy),
+                prefixIcon: Icon(Icons.file_copy),
+                //icon: Icon(Icons.file_copy),
                 hintText: "Passport",
                 border:
                     OutlineInputBorder(borderRadius: BorderRadius.circular(16)),
@@ -294,10 +317,11 @@ class _roomBookingState extends State<roomBooking> {
           Row(
             children: [
               Checkbox(
-                value: isChecked,
+                value: ifChecked,
                 onChanged: (bool? value) {
                   setState(() {
-                    isChecked = value!;
+                    ifChecked = value!;
+                    iChecked = false;
                   });
                 },
               ),
@@ -310,10 +334,11 @@ class _roomBookingState extends State<roomBooking> {
           Row(
             children: [
               Checkbox(
-                value: isChecked,
+                value: iChecked,
                 onChanged: (bool? value) {
                   setState(() {
-                    isChecked = value!;
+                    iChecked = value!;
+                    ifChecked = false;
                   });
                 },
               ),
@@ -341,7 +366,8 @@ class _roomBookingState extends State<roomBooking> {
             child: TextFormField(
               keyboardType: TextInputType.number,
               decoration: InputDecoration(
-                icon: Icon(Icons.payment),
+                prefixIcon: Icon(Icons.payment),
+                //icon: Icon(Icons.payment),
                 hintText: "Paypal,Debit Card/Credit Card",
                 border:
                     OutlineInputBorder(borderRadius: BorderRadius.circular(16)),
@@ -356,7 +382,7 @@ class _roomBookingState extends State<roomBooking> {
               style: TextButton.styleFrom(
                   shape: StadiumBorder(),
                   minimumSize: Size(50, 40),
-                  backgroundColor: Colors.black,
+                  backgroundColor: Colors.blue,
                   textStyle: TextStyle(
                     fontWeight: FontWeight.bold,
                     fontSize: 20,
