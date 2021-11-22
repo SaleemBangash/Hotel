@@ -32,7 +32,7 @@ class refreshement extends StatelessWidget {
               ),
               SizedBox(height: 20),
               ElevatedButton(
-                child: Text("Lunch".toUpperCase()),
+                child: Text("Lunch".toUpperCase().toUpperCase()),
                 style: TextButton.styleFrom(
                     shape: StadiumBorder(),
                     minimumSize: Size(150, 40),
@@ -47,7 +47,7 @@ class refreshement extends StatelessWidget {
               ),
               SizedBox(height: 20),
               ElevatedButton(
-                child: Text("Dinner"),
+                child: Text("Dinner".toUpperCase()),
                 style: TextButton.styleFrom(
                     shape: StadiumBorder(),
                     minimumSize: Size(150, 40),
@@ -62,7 +62,7 @@ class refreshement extends StatelessWidget {
               ),
               SizedBox(height: 20),
               ElevatedButton(
-                child: Text("Late Night"),
+                child: Text("Late Night".toUpperCase()),
                 style: TextButton.styleFrom(
                     shape: StadiumBorder(),
                     minimumSize: Size(150, 40),
@@ -77,7 +77,7 @@ class refreshement extends StatelessWidget {
               ),
               SizedBox(height: 20),
               ElevatedButton(
-                child: Text("Evening Food"),
+                child: Text("Evening Food".toUpperCase()),
                 style: TextButton.styleFrom(
                     shape: StadiumBorder(),
                     minimumSize: Size(150, 40),
