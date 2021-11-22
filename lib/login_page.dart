@@ -5,9 +5,17 @@ import 'package:hotel/utils/routes.dart';
 import 'package:hotel/widgets/background_image.dart';
 
 // ignore: camel_case_types
-class Login_Page extends StatelessWidget with InputValidationMixin {
+class Login_Page extends StatefulWidget with InputValidationMixin {
+  @override
+  State<Login_Page> createState() => _Login_PageState();
+}
+
+class _Login_PageState extends State<Login_Page> {
   final _formkey = GlobalKey<FormState>();
+
   String name = "";
+
+  bool _isObscure = true;
 
   @override
   Widget build(BuildContext context) {
@@ -50,12 +58,12 @@ class Login_Page extends StatelessWidget with InputValidationMixin {
                             borderRadius: BorderRadius.circular(16)),
                         // labelText: "Email"
                       ),
-                      validator: (email) {
-                        if (isEmailValid("email"))
-                          return null;
-                        else
-                          return 'Enter a valid email address';
-                      },
+                      // validator: (email) {
+                      //   if (isEmailValid("email"))
+                      //     return null;
+                      //   else
+                      //     return 'Enter a valid email address';
+                      // },
                     ),
                   ),
                 ),
@@ -69,9 +77,19 @@ class Login_Page extends StatelessWidget with InputValidationMixin {
                         color: Colors.grey[600]!.withOpacity(0.5),
                         borderRadius: BorderRadius.circular(16)),
                     child: TextFormField(
+                      obscureText: _isObscure,
                       style: TextStyle(color: Colors.white),
                       keyboardType: TextInputType.visiblePassword,
                       decoration: InputDecoration(
+                        suffixIcon: IconButton(
+                            icon: Icon(_isObscure
+                                ? Icons.visibility
+                                : Icons.visibility_off),
+                            onPressed: () {
+                              setState(() {
+                                _isObscure = !_isObscure;
+                              });
+                            }),
                         labelStyle: TextStyle(
                             color: Colors.white,
                             fontSize: 20,
@@ -82,13 +100,13 @@ class Login_Page extends StatelessWidget with InputValidationMixin {
                         border: OutlineInputBorder(
                             borderRadius: BorderRadius.circular(16)),
                       ),
-                      validator: (password) {
-                        if (isPasswordValid("password"))
-                          return null;
-                        else
-                          return 'Enter a valid password';
-                      },
-                      obscureText: true,
+                      // validator: (password) {
+                      //   if (isPasswordValid("password"))
+                      //     return null;
+                      //   else
+                      //     return 'Enter a valid password';
+                      // },
+                      // obscureText: true,
                       // maxLength: 10,
                     ),
                   ),
