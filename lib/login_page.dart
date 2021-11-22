@@ -30,6 +30,9 @@ class Login_Page extends StatelessWidget with InputValidationMixin {
                 child: Padding(
                   padding: const EdgeInsets.all(8.0),
                   child: Container(
+                    decoration: BoxDecoration(
+                        color: Colors.grey[600]!.withOpacity(0.5),
+                        borderRadius: BorderRadius.circular(16)),
                     child: TextFormField(
                       style: TextStyle(color: Colors.white),
                       keyboardType: TextInputType.emailAddress,
@@ -113,7 +116,7 @@ class Login_Page extends StatelessWidget with InputValidationMixin {
               ),
               InkWell(
                 onTap: () {
-                  Navigator.pushNamed(context, MyRoutes.statusRoute);
+                  Navigator.pushNamed(context, MyRoutes.regRoute);
                 },
                 child: Container(
                   child: Center(

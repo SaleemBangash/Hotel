@@ -154,10 +154,13 @@ class _roomBookingState extends State<roomBooking> {
             ),
           ),
           SizedBox(height: 20),
-          Container(
-            child: Text(
-              "Number Of People",
-              style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
+          Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: Container(
+              child: Text(
+                "Number Of People",
+                style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
+              ),
             ),
           ),
           Container(
@@ -190,10 +193,14 @@ class _roomBookingState extends State<roomBooking> {
                     )),
               )),
           SizedBox(height: 20),
-          Container(
-            child: Text(
-              "Dog".toUpperCase(),
-              style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
+          Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: Container(
+              child: Text(
+                "Dog".toUpperCase(),
+                style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
+              ),
+
             ),
           ),
           Row(
@@ -274,11 +281,14 @@ class _roomBookingState extends State<roomBooking> {
           SizedBox(
             height: 10,
           ),
-          Container(
-            child: Text(
-              "Confirm The Person Wh is going to reserve the Room"
-                  .toUpperCase(),
-              style: TextStyle(fontSize: 12, fontWeight: FontWeight.bold),
+          Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: Container(
+              child: Text(
+                "Confirm The Person Wh is going to reserve the Room"
+                    .toUpperCase(),
+                style: TextStyle(fontSize: 12, fontWeight: FontWeight.bold),
+              ),
             ),
           ),
           Row(
@@ -316,10 +326,13 @@ class _roomBookingState extends State<roomBooking> {
           SizedBox(
             height: 10,
           ),
-          Container(
-            child: Text(
-              "payment method".toUpperCase(),
-              style: TextStyle(fontSize: 12, fontWeight: FontWeight.bold),
+          Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: Container(
+              child: Text(
+                "payment method".toUpperCase(),
+                style: TextStyle(fontSize: 12, fontWeight: FontWeight.bold),
+              ),
             ),
           ),
           SizedBox(height: 10),
