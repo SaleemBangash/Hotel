@@ -125,7 +125,7 @@ class _DrinksState extends State<BreakFast> {
                     decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(20),
                       border: Border.all(
-                        width: 5,
+                        width: 2,
                       ),
                     ),
                     child: Padding(
@@ -162,7 +162,7 @@ class _DrinksState extends State<BreakFast> {
                     decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(20),
                       border: Border.all(
-                        width: 5,
+                        width: 2,
                       ),
                     ),
                     child: Padding(
