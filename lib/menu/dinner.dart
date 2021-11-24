@@ -30,7 +30,7 @@ class _DrinksState extends State<Dinner> {
           padding: const EdgeInsets.only(top: 50, left: 30, right: 30),
           children: [
             Card(
-              color: Colors.brown,
+              color: Colors.brown[200],
               shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(20)),
               //margin: const EdgeInsets.symmetric(vertical: 20.0),
@@ -45,7 +45,13 @@ class _DrinksState extends State<Dinner> {
                   ),
                 ),
                 // ignore: avoid_unnecessary_containers
-                child: Image.asset("images/cbutter.jpg"),
+                child: Padding(
+                  padding: const EdgeInsets.only(top: 20, bottom: 20),
+                  child: Image.asset(
+                    "images/cbutter.jpg",
+                    fit: BoxFit.cover,
+                  ),
+                ),
                 footer: Center(
                     child: Text(
                   "100",
@@ -54,7 +60,7 @@ class _DrinksState extends State<Dinner> {
               ),
             ),
             Card(
-              color: Colors.brown,
+              color: Colors.brown[200],
               shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(20)),
               //padding: const Edge
@@ -70,7 +76,13 @@ class _DrinksState extends State<Dinner> {
                   ),
                 ),
                 // ignore: avoid_unnecessary_containers
-                child: Image.asset("images/macroni.jpg"),
+                child: Padding(
+                  padding: const EdgeInsets.only(top: 20, bottom: 20),
+                  child: Image.asset(
+                    "images/macroni.jpg",
+                    fit: BoxFit.fill,
+                  ),
+                ),
                 footer: Center(
                   child: Text("100",
                       style:
@@ -79,7 +91,7 @@ class _DrinksState extends State<Dinner> {
               ),
             ),
             Card(
-              color: Colors.brown,
+              color: Colors.brown[200],
               shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(20)),
               //padding: const Edge
@@ -94,8 +106,23 @@ class _DrinksState extends State<Dinner> {
                     ),
                   ),
                 ),
-                // ignore: avoid_unnecessary_containers
-                child: Image.asset("images/pasta.jpg"),
+                child: Container(
+                  decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(20),
+                    border: Border.all(
+                      width: 2,
+                    ),
+                  ),
+
+                  // ignore: avoid_unnecessary_containers
+                  child: Padding(
+                    padding: const EdgeInsets.only(top: 20, bottom: 20),
+                    child: Image.asset(
+                      "images/pasta.jpg",
+                      fit: BoxFit.cover,
+                    ),
+                  ),
+                ),
                 footer: Center(
                   child: Text("100",
                       style:
@@ -104,7 +131,7 @@ class _DrinksState extends State<Dinner> {
               ),
             ),
             Card(
-              color: Colors.brown,
+              color: Colors.brown[200],
               shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(20)),
               // padding: const EdgeInsets.all(8),
@@ -119,7 +146,13 @@ class _DrinksState extends State<Dinner> {
                   ),
                 ),
                 // ignore: avoid_unnecessary_containers
-                child: Image.asset("images/tikka.jpg"),
+                child: Padding(
+                  padding: const EdgeInsets.only(top: 20, bottom: 20),
+                  child: Image.asset(
+                    "images/tikka.jpg",
+                    fit: BoxFit.fill,
+                  ),
+                ),
                 footer: Center(
                   child: Text("100",
                       style:

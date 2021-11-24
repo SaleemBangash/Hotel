@@ -35,7 +35,7 @@ class _DrinksState extends State<Evening> {
             padding: const EdgeInsets.only(top: 50, left: 30, right: 30),
             children: [
               Card(
-                color: Colors.brown,
+                color: Colors.brown[200],
                 shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.circular(20)),
                 //margin: const EdgeInsets.symmetric(vertical: 20.0),
@@ -56,7 +56,13 @@ class _DrinksState extends State<Evening> {
                           border: Border.all(
                             width: 5,
                           )),
-                      child: Image.asset("images/samosa.jpg")),
+                      child: Padding(
+                        padding: const EdgeInsets.only(top: 20, bottom: 20),
+                        child: Image.asset(
+                          "images/samosa.jpg",
+                          fit: BoxFit.cover,
+                        ),
+                      )),
                   footer: Center(
                       child: Text(
                     "100",
@@ -65,7 +71,7 @@ class _DrinksState extends State<Evening> {
                 ),
               ),
               Card(
-                color: Colors.brown,
+                color: Colors.brown[200],
                 shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.circular(20)),
                 //padding: const Edge
@@ -87,7 +93,13 @@ class _DrinksState extends State<Evening> {
                           border: Border.all(
                             width: 5,
                           )),
-                      child: Image.asset("images/roll.jpg")),
+                      child: Padding(
+                        padding: const EdgeInsets.only(top: 20, bottom: 20),
+                        child: Image.asset(
+                          "images/roll.jpg",
+                          fit: BoxFit.cover,
+                        ),
+                      )),
                   footer: Center(
                     child: Text("100",
                         style: TextStyle(
@@ -97,7 +109,7 @@ class _DrinksState extends State<Evening> {
               ),
               Card(
                 semanticContainer: true,
-                color: Colors.brown,
+                color: Colors.brown[200],
                 shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.circular(20)),
                 //padding: const EdgeInsets.all(8),
@@ -117,7 +129,13 @@ class _DrinksState extends State<Evening> {
                           border: Border.all(
                             width: 5,
                           )),
-                      child: Image.asset("images/greenTea.jpg")),
+                      child: Padding(
+                        padding: const EdgeInsets.only(top: 20, bottom: 20),
+                        child: Image.asset(
+                          "images/greenTea.jpg",
+                          fit: BoxFit.cover,
+                        ),
+                      )),
                   footer: Center(
                     child: Text("100",
                         style: TextStyle(
@@ -126,7 +144,7 @@ class _DrinksState extends State<Evening> {
                 ),
               ),
               Card(
-                color: Colors.brown,
+                color: Colors.brown[200],
                 shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.circular(20)),
                 // padding: const EdgeInsets.all(8),
@@ -147,7 +165,13 @@ class _DrinksState extends State<Evening> {
                           border: Border.all(
                             width: 5,
                           )),
-                      child: Image.asset("images/tea.jpg")),
+                      child: Padding(
+                        padding: const EdgeInsets.only(top: 20, bottom: 20),
+                        child: Image.asset(
+                          "images/tea.jpg",
+                          fit: BoxFit.cover,
+                        ),
+                      )),
                   footer: Center(
                     child: Text("100",
                         style: TextStyle(

@@ -30,7 +30,7 @@ class _DrinksState extends State<BreakFast> {
           padding: const EdgeInsets.only(top: 50, left: 30, right: 30),
           children: [
             Card(
-              color: Colors.brown,
+              color: Colors.brown[200],
               shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(20)),
               //margin: const EdgeInsets.symmetric(vertical: 20.0),
@@ -49,10 +49,16 @@ class _DrinksState extends State<BreakFast> {
                     decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(20),
                       border: Border.all(
-                        width: 5,
+                        width: 2,
                       ),
                     ),
-                    child: Image.asset("images/egg.jpg")),
+                    child: Padding(
+                      padding: const EdgeInsets.only(top: 20, bottom: 20),
+                      child: Image.asset(
+                        "images/egg.jpg",
+                        fit: BoxFit.cover,
+                      ),
+                    )),
                 footer: Center(
                     child: Text(
                   "100",
@@ -61,7 +67,7 @@ class _DrinksState extends State<BreakFast> {
               ),
             ),
             Card(
-              color: Colors.brown,
+              color: Colors.brown[200],
               shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(20)),
               //padding: const Edge
@@ -81,10 +87,16 @@ class _DrinksState extends State<BreakFast> {
                     decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(20),
                       border: Border.all(
-                        width: 5,
+                        width: 2,
                       ),
                     ),
-                    child: Image.asset("images/boilEgg.jpg")),
+                    child: Padding(
+                      padding: const EdgeInsets.only(top: 20, bottom: 20),
+                      child: Image.asset(
+                        "images/boilEgg.jpg",
+                        fit: BoxFit.cover,
+                      ),
+                    )),
                 footer: Center(
                   child: Text("100",
                       style:
@@ -94,7 +106,7 @@ class _DrinksState extends State<BreakFast> {
             ),
             Card(
               semanticContainer: true,
-              color: Colors.brown,
+              color: Colors.brown[200],
               shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(20)),
               //padding: const EdgeInsets.all(8),
@@ -116,7 +128,13 @@ class _DrinksState extends State<BreakFast> {
                         width: 5,
                       ),
                     ),
-                    child: Image.asset("images/sandwich.jpg")),
+                    child: Padding(
+                      padding: const EdgeInsets.only(top: 20, bottom: 20),
+                      child: Image.asset(
+                        "images/sandwich.jpg",
+                        fit: BoxFit.cover,
+                      ),
+                    )),
                 footer: Center(
                   child: Text("100",
                       style:
@@ -125,7 +143,7 @@ class _DrinksState extends State<BreakFast> {
               ),
             ),
             Card(
-              color: Colors.brown,
+              color: Colors.brown[200],
               shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(20)),
               // padding: const EdgeInsets.all(8),
@@ -147,7 +165,13 @@ class _DrinksState extends State<BreakFast> {
                         width: 5,
                       ),
                     ),
-                    child: Image.asset("images/bread.jpg")),
+                    child: Padding(
+                      padding: const EdgeInsets.only(top: 20, bottom: 20),
+                      child: Image.asset(
+                        "images/bread.jpg",
+                        fit: BoxFit.cover,
+                      ),
+                    )),
                 footer: Center(
                   child: Text("100",
                       style:

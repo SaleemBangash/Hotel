@@ -30,7 +30,7 @@ class _DrinksState extends State<Drinks> {
           padding: const EdgeInsets.only(top: 50, left: 30, right: 30),
           children: [
             Card(
-              color: Colors.brown,
+              color: Colors.brown[200],
               shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(20)),
               //margin: const EdgeInsets.symmetric(vertical: 20.0),
@@ -45,7 +45,13 @@ class _DrinksState extends State<Drinks> {
                   ),
                 ),
                 // ignore: avoid_unnecessary_containers
-                child: Image.asset("images/cocktail.jpg"),
+                child: Padding(
+                  padding: const EdgeInsets.only(top: 20, bottom: 20),
+                  child: Image.asset(
+                    "images/cocktail.jpg",
+                    fit: BoxFit.cover,
+                  ),
+                ),
                 footer: Center(
                     child: Text(
                   "100",
@@ -54,7 +60,7 @@ class _DrinksState extends State<Drinks> {
               ),
             ),
             Card(
-              color: Colors.brown,
+              color: Colors.brown[200],
               shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(20)),
               //padding: const Edge
@@ -70,7 +76,13 @@ class _DrinksState extends State<Drinks> {
                   ),
                 ),
                 // ignore: avoid_unnecessary_containers
-                child: Image.asset("images/qbcocktail.jpg"),
+                child: Padding(
+                  padding: const EdgeInsets.only(top: 20, bottom: 20),
+                  child: Image.asset(
+                    "images/qbcocktail.jpg",
+                    fit: BoxFit.cover,
+                  ),
+                ),
                 footer: Center(
                   child: Text("100",
                       style:
@@ -80,7 +92,7 @@ class _DrinksState extends State<Drinks> {
             ),
             Card(
               semanticContainer: true,
-              color: Colors.brown,
+              color: Colors.brown[200],
               shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(20)),
               //padding: const EdgeInsets.all(8),
@@ -95,7 +107,13 @@ class _DrinksState extends State<Drinks> {
                   ),
                 ),
                 // ignore: avoid_unnecessary_containers
-                child: Image.asset("images/special.jpg"),
+                child: Padding(
+                  padding: const EdgeInsets.only(top: 20, bottom: 20),
+                  child: Image.asset(
+                    "images/special.jpg",
+                    fit: BoxFit.cover,
+                  ),
+                ),
                 footer: Center(
                   child: Text("100",
                       style:
@@ -104,7 +122,7 @@ class _DrinksState extends State<Drinks> {
               ),
             ),
             Card(
-              color: Colors.brown,
+              color: Colors.brown[200],
               shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(20)),
               // padding: const EdgeInsets.all(8),
@@ -119,7 +137,13 @@ class _DrinksState extends State<Drinks> {
                   ),
                 ),
                 // ignore: avoid_unnecessary_containers
-                child: Image.asset("images/party.jpg"),
+                child: Padding(
+                  padding: const EdgeInsets.only(top: 20, bottom: 20),
+                  child: Image.asset(
+                    "images/party.jpg",
+                    fit: BoxFit.cover,
+                  ),
+                ),
                 footer: Center(
                   child: Text("100",
                       style:

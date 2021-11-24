@@ -27,7 +27,7 @@ class Lunch extends StatelessWidget {
           padding: const EdgeInsets.only(top: 50, left: 30, right: 30),
           children: [
             Card(
-              color: Colors.brown,
+              color: Colors.brown[200],
               shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(20)),
               //margin: const EdgeInsets.symmetric(vertical: 20.0),
@@ -46,12 +46,15 @@ class Lunch extends StatelessWidget {
                   decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(20),
                     border: Border.all(
-                      width: 5,
+                      width: 2,
                     ),
                   ),
-                  child: Image.asset(
-                    "images/kabab.jpg",
-                    //fit: BoxFit.fitHeight,
+                  child: Padding(
+                    padding: const EdgeInsets.only(top: 20, bottom: 20),
+                    child: Image.asset(
+                      "images/kabab.jpg",
+                      fit: BoxFit.fill,
+                    ),
                   ),
                 ),
                 footer: Center(
@@ -62,7 +65,7 @@ class Lunch extends StatelessWidget {
               ),
             ),
             Card(
-              color: Colors.brown,
+              color: Colors.brown[200],
               shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(20)),
               //padding: const Edge
@@ -82,12 +85,15 @@ class Lunch extends StatelessWidget {
                   decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(20),
                     border: Border.all(
-                      width: 5,
+                      width: 2,
                     ),
                   ),
-                  child: Image.asset(
-                    "images/skabab.jpg",
-                    // fit: BoxFit.fitHeight,
+                  child: Padding(
+                    padding: const EdgeInsets.only(top: 20, bottom: 20),
+                    child: Image.asset(
+                      "images/skabab.jpg",
+                       fit: BoxFit.fill,
+                    ),
                   ),
                 ),
                 footer: Center(
@@ -99,7 +105,7 @@ class Lunch extends StatelessWidget {
             ),
             Card(
               //semanticContainer: true,
-              color: Colors.brown,
+              color: Colors.brown[200],
               shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(20)),
               //padding: const EdgeInsets.all(8),
@@ -118,12 +124,15 @@ class Lunch extends StatelessWidget {
                   decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(20),
                     border: Border.all(
-                      width: 5,
+                      width: 2,
                     ),
                   ),
-                  child: Image.asset(
-                    "images/karhai.jpg",
-                    // fit: BoxFit.fitHeight,
+                  child: Padding(
+                    padding: const EdgeInsets.only(top: 20, bottom: 20),
+                    child: Image.asset(
+                      "images/karhai.jpg",
+                       fit: BoxFit.fill,
+                    ),
                   ),
                 ),
                 footer: Center(
@@ -134,17 +143,20 @@ class Lunch extends StatelessWidget {
               ),
             ),
             Card(
-              color: Colors.brown,
+              color: Colors.brown[200],
               shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(20)),
               // padding: const EdgeInsets.all(8),
               child: GridTile(
                 header: Center(
-                  child: Text(
-                    "m karhai".toUpperCase(),
-                    style: TextStyle(
-                      fontWeight: FontWeight.bold,
-                      fontSize: 19,
+                  child: Padding(
+                    padding: const EdgeInsets.only(top: 5),
+                    child: Text(
+                      "m karhai".toUpperCase(),
+                      style: TextStyle(
+                        fontWeight: FontWeight.bold,
+                        fontSize: 19,
+                      ),
                     ),
                   ),
                 ),
@@ -153,12 +165,15 @@ class Lunch extends StatelessWidget {
                   decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(20),
                     border: Border.all(
-                      width: 5,
+                      width: 1,
                     ),
                   ),
-                  child: Image.asset(
-                    "images/mkarhai.jpg",
-                    // fit: BoxFit.fitHeight,
+                  child: Padding(
+                    padding: const EdgeInsets.only(top: 20, bottom: 20),
+                    child: Image.asset(
+                      "images/mkarhai.jpg",
+                      // fit: BoxFit.fitHeight,
+                    ),
                   ),
                 ),
                 footer: Center(
@@ -170,7 +185,7 @@ class Lunch extends StatelessWidget {
               //color: Colors.teal[400],
             ),
             Card(
-              color: Colors.brown,
+              color: Colors.brown[200],
               shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(20)),
               // padding: const EdgeInsets.all(8),
@@ -189,12 +204,15 @@ class Lunch extends StatelessWidget {
                   decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(20),
                     border: Border.all(
-                      width: 5,
+                      width: 2,
                     ),
                   ),
-                  child: Image.asset(
-                    "images/bbq.jpg",
-                    //fit: BoxFit.fitHeight,
+                  child: Padding(
+                    padding: const EdgeInsets.only(top: 20, bottom: 20),
+                    child: Image.asset(
+                      "images/bbq.jpg",
+                      fit: BoxFit.fill,
+                    ),
                   ),
                 ),
                 footer: Center(
@@ -206,7 +224,7 @@ class Lunch extends StatelessWidget {
               //color: Colors.teal[400],
             ),
             Card(
-              color: Colors.brown,
+              color: Colors.brown[200],
               shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(20)),
               // padding: const EdgeInsets.all(8),
@@ -225,18 +243,24 @@ class Lunch extends StatelessWidget {
                   decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(20),
                     border: Border.all(
-                      width: 5,
+                      width: 2,
                     ),
                   ),
-                  child: Image.asset(
-                    "images/rice.png",
-                    // fit: BoxFit.fitHeight,
+                  child: Padding(
+                    padding: const EdgeInsets.only(top: 20, bottom: 20),
+                    child: Image.asset(
+                      "images/rice.png",
+                       fit: BoxFit.fill,
+                    ),
                   ),
                 ),
                 footer: Center(
-                  child: Text("100",
-                      style:
-                          TextStyle(fontSize: 20, fontWeight: FontWeight.bold)),
+                  child: Padding(
+                    padding: const EdgeInsets.only(top: 5),
+                    child: Text("100",
+                        style:
+                            TextStyle(fontSize: 20, fontWeight: FontWeight.bold)),
+                  ),
                 ),
               ),
               //color: Colors.teal[400],

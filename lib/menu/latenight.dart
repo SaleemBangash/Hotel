@@ -25,7 +25,7 @@ class LateNight extends StatelessWidget {
           padding: const EdgeInsets.only(top: 50, left: 30, right: 30),
           children: [
             Card(
-              color: Colors.brown,
+              color: Colors.brown[200],
               shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(20)),
               //margin: const EdgeInsets.symmetric(vertical: 20.0),
@@ -47,12 +47,15 @@ class LateNight extends StatelessWidget {
                   decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(20),
                     border: Border.all(
-                      width: 5,
+                      width: 2,
                     ),
                   ),
-                  child: Image.asset(
-                    "images/pizza.jpg",
-                    //fit: BoxFit.fitHeight,
+                  child: Padding(
+                    padding: const EdgeInsets.only(top: 20, bottom: 20),
+                    child: Image.asset(
+                      "images/pizza.jpg",
+                      fit: BoxFit.cover,
+                    ),
                   ),
                 ),
                 footer: Center(
@@ -63,7 +66,7 @@ class LateNight extends StatelessWidget {
               ),
             ),
             Card(
-              color: Colors.brown,
+              color: Colors.brown[200],
               shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(20)),
               //padding: const Edge
@@ -86,12 +89,15 @@ class LateNight extends StatelessWidget {
                   decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(20),
                     border: Border.all(
-                      width: 5,
+                      width: 2,
                     ),
                   ),
-                  child: Image.asset(
-                    "images/kburger.jpg",
-                    //fit: BoxFit.fitHeight,
+                  child: Padding(
+                    padding: const EdgeInsets.only(top: 20, bottom: 20),
+                    child: Image.asset(
+                      "images/kburger.jpg",
+                      fit: BoxFit.cover,
+                    ),
                   ),
                 ),
                 footer: Center(
@@ -103,7 +109,7 @@ class LateNight extends StatelessWidget {
             ),
             Card(
               //semanticContainer: true,
-              color: Colors.brown,
+              color: Colors.brown[200],
               shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(20)),
               //padding: const EdgeInsets.all(8),
@@ -125,12 +131,15 @@ class LateNight extends StatelessWidget {
                   decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(20),
                     border: Border.all(
-                      width: 5,
+                      width: 2,
                     ),
                   ),
-                  child: Image.asset(
-                    "images/icecream.jpg",
-                    // fit: BoxFit.fitHeight,
+                  child: Padding(
+                    padding: const EdgeInsets.only(top: 20, bottom: 20),
+                    child: Image.asset(
+                      "images/icecream.jpg",
+                      fit: BoxFit.fill,
+                    ),
                   ),
                 ),
                 footer: Center(
@@ -141,7 +150,7 @@ class LateNight extends StatelessWidget {
               ),
             ),
             Card(
-              color: Colors.brown,
+              color: Colors.brown[200],
               shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(20)),
               // padding: const EdgeInsets.all(8),
@@ -163,12 +172,15 @@ class LateNight extends StatelessWidget {
                   decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(20),
                     border: Border.all(
-                      width: 5,
+                      width: 2,
                     ),
                   ),
-                  child: Image.asset(
-                    "images/zburger.jpg",
-                    //fit: BoxFit.fitHeight,
+                  child: Padding(
+                    padding: const EdgeInsets.only(top: 20, bottom: 20),
+                    child: Image.asset(
+                      "images/zburger.jpg",
+                      //fit: BoxFit.fitHeight,
+                    ),
                   ),
                 ),
                 footer: Center(
